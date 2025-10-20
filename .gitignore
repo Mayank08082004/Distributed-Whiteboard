@@ -1,0 +1,78 @@
+# ===============================================================
+# A comprehensive .gitignore file for a Java Maven project
+# ===============================================================
+
+# === Java & Maven Build Artifacts ===
+# Ignore the main build directory and compiled class files
+target/
+*.class
+
+# Ignore packaged archives
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Allow the Maven wrapper JAR, which should be committed
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Ignore Maven release properties and temporary files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+
+# === Log & Runtime Files ===
+# Ignore log files
+*.log
+*.log.*
+
+# Ignore virtual machine crash logs
+hs_err_pid*
+
+
+# === IDEs ===
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# VS Code
+.vscode/
+
+
+# === Operating System Files ===
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+
+# === Project-Specific Files ===
+# Ignore the saved whiteboard state file
+whiteboard.save
